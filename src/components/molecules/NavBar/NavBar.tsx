@@ -5,13 +5,13 @@ import { ICitiesProps } from '../../types/module';
 
 export interface INavProps {
     onclick?: (event: React.MouseEvent<HTMLElement>) => void;
-    onClickInput?: any
-    onClickLocatio: any
+    onClickInput: (value: string) => void;
+    onClickLocatio: (lat: number, long: number) => void;
     cities: ICitiesProps[];
     onClickTopBotton?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
-const NavBar: FC<INavProps> = ({onclick, onClickInput, onClickLocatio, cities, onClickTopBotton}) => {
+const NavBar: FC<INavProps> = ({ onclick, onClickInput, onClickLocatio, cities, onClickTopBotton }) => {
     return (
         <>
             <TopButtons cities={cities} onClickTopBotton={onClickTopBotton} />

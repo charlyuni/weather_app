@@ -24,7 +24,7 @@ export const getWeatherDataLocation = async (lat: number, long: number) => {
 };
 
 
-export const formatBackground = (weather: any) => {
+export const formatBackground = (weather: { list: { weather: { main: string; }[]; }[]; }) => {
 
   switch (weather?.list[0].weather[0].main) {
     case "Clouds":

@@ -2,7 +2,7 @@ import { WeatherData } from "../../types/module"
 import GeneralDataCard from "../../atoms/GeneralDataCard/GeneralDataCard"
 import { DateTime } from "luxon"
 
-const GeneralData = ({data}: WeatherData) => {
+const GeneralData = ({ data }: WeatherData) => {
 
   const amanece = DateTime.fromSeconds(data.city.sunrise).toFormat('hh:mm');
   const anochece = DateTime.fromSeconds(data.city.sunset).toFormat('hh:mm');

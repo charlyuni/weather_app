@@ -9,7 +9,7 @@ export interface ITemperatureCard {
   unit: string;
 }
 
-const GeneralDataCard: FC<ITemperatureCard> = ({icons, title, size, value, unit}) => {
+const GeneralDataCard: FC<ITemperatureCard> = ({ icons, title, size, value, unit }) => {
   return (
     <>
       {icons === 'WiDaySunny' ? <WiDaySunny size={size} /> : null}

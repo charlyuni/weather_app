@@ -5,8 +5,8 @@ import ForescastCard from './ForecastCard';
 
 test('Should render component with props', () => {
 	const icon = 'SomeFakeIcon';
-    const hours = 'SomeFakeHours';
-    const temp = 10;
+	const hours = 'SomeFakeHours';
+	const temp = 10;
 
 	const component = render(<ForescastCard hours={hours} icon={icon} temp={temp} />);
 

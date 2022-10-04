@@ -1,11 +1,10 @@
-import { WeatherData } from "../../types/module"
 
 interface LocationProps {
   country: string;
   city: string;
 }
 
-const Location = ({city ,country}) => {
+const Location = ({ city, country }: LocationProps) => {
 
   return (
     <div className="flex justify-center items-center mt-3">

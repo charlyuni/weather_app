@@ -1,8 +1,8 @@
 import { WeatherData } from "../../types/module"
 import TemperatureCard from "../../atoms/TemperatureCard/TemperatureCard";
 
-const SummaryTemp = ({data}: WeatherData) => {
-  
+const SummaryTemp = ({ data }: WeatherData) => {
+
   const humidity: string = String(data.list[0].main.humidity)
   const wind: string = String(data.list[0].wind.speed)
   const pressure: string = String(data.list[0].main.pressure)

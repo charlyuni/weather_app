@@ -44,10 +44,10 @@ const Landing = () => {
           <Location country={weather.city.name} city={weather.city.country} />
           <SummaryTemp data={weather} />
           <GeneralData data={weather} />
-          <Forecast title={"Pronostico proximas Dias"} data={weather} />
+          <Forecast title={"Pronostico proximas Dias"} data={weather.list} />
         </div>
       ) : null}
-      
+
     </div>
   )
 }

@@ -7,7 +7,7 @@ test('Should render component with props', () => {
 	const city = 'Buenos Aires';
 	const country = 'Argentina';
 
-	const component = render(<Location city={city} country={country}/>);
+	const component = render(<Location city={city} country={country} />);
 
 	expect(component.container).toBeInTheDocument();
 });

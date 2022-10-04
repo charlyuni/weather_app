@@ -9,7 +9,7 @@ export interface ITemperatureCard {
     unit: string;
 }
 
-const TemperatureCard: FC<ITemperatureCard> = ({icons, title, size, value, unit}) => {
+const TemperatureCard: FC<ITemperatureCard> = ({ icons, title, size, value, unit }) => {
     return (
         <div className="flex justify-start items-center text-sm">
             {icons === "WiThermometerExterior" ? <WiThermometerExterior size={size} /> : null}

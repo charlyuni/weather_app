@@ -6,7 +6,7 @@ export interface IForecastCardProps {
     temp: number,
 }
 
-const ForecastCard: FC<IForecastCardProps> = ({hours, icon, temp}) => {
+const ForecastCard: FC<IForecastCardProps> = ({ hours, icon, temp }) => {
     return (
         <div className="flex flex-col items-center justify-around">
             <p className="text-sm font-light">{hours}</p>

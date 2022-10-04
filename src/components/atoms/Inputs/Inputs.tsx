@@ -6,11 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export interface IInputProps {
     onclick?: (event: React.MouseEvent<HTMLElement>) => void;
-    onClickInput: (value : string) => string;
-    onClickLocatio: (lat : number , long: number) => string;
+    onClickInput: (value: string) => void;
+    onClickLocatio: (lat: number, long: number) => void;
 }
 
-const Inputs: FC<IInputProps> = ({onclick, onClickInput, onClickLocatio}) => {
+const Inputs: FC<IInputProps> = ({ onclick, onClickInput, onClickLocatio }) => {
 
     const [value, setValue] = useState('');
 
@@ -36,7 +36,7 @@ const Inputs: FC<IInputProps> = ({onclick, onClickInput, onClickLocatio}) => {
     };
 
     const handleClickSearch = () => {
-        if (value !== '' && value.length > 3 ) {
+        if (value !== '' && value.length > 3) {
             onClickInput(value)
             setValue("")
         } else {
@@ -72,7 +72,7 @@ const Inputs: FC<IInputProps> = ({onclick, onClickInput, onClickLocatio}) => {
                     °F
                 </button>
             </div>
-        <ToastContainer />
+            <ToastContainer />
         </div>
     )
 }

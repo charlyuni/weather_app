@@ -81,6 +81,6 @@ export interface ICitiesProps {
     id: number;
     name: string;
     image: string;
-    
-  }
+
+}
 
