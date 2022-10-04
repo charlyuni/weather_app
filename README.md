@@ -10,8 +10,13 @@ El proyecto es una APP que permite consultar el estado de clima y el pronostico 
 Se puede visualizar el clima tanto en metrica celsius como en fahrenheit.
 El resumen de la informacion mostrada es el clima actual, el icono de referencia y datos generales (presion, Humedad, Viento, Amanecer, Anochecer, Temperatura Minima y Maxima).
 El background va cambiando de color segun el pronostico.
+Cada vez que se cambie la localidad o la unidad de medida se actualizara la informacion. 
 
 La API utilizada es de https://api.openweathermap.org/ .
+
+### Desplegado en:
+
+https://weather-app-dusky-mu.vercel.app/
 
 ### Screenshot
 (https://drive.google.com/file/d/1Ry1E2U60dr3KMnWNt_bmvFFMt8SaKY7q/view?usp=sharing)
